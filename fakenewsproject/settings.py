@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-_n=f&d7q5%j^e_jd4$hm+fhb)&)!*s37+2-yz1wux)iq)g1(3b
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['django-fake-news-2.onrender.com']
+ALLOWED_HOSTS = ['django-fake-news-2.onrender.com','localhost','127.0.0.1']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware', 
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
