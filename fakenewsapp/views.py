@@ -6,7 +6,7 @@ def load_model(model_name):
     if model_name == 'English_model':
         return load('./fakenewsapp/mymodels/English_model.joblib')
     else:
-        return load('./fakenewsapp/mymodels/swahili_fake_news_model.joblib')
+        return load('./fakenewsapp/mymodels/swahili_version-2.joblib')
 
 def predictor(request):
     """Render the form for news content input."""
