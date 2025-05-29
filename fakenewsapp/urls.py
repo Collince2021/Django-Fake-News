@@ -1,5 +1,5 @@
 from django.urls import path
-from . import views  # Adjust if necessary based on your project structure
+from . import views  
 
 urlpatterns = [
     # Other URL patterns
